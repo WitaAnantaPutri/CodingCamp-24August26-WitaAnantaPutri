@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <section class="welcome card">
+      <div id="clock">10:45:22</div>
+      <div id="date">Tuesday, January 27, 2026</div>
+      <h1 id="greeting">Good Morning</h1>
+    </section>
+
+    <div class="grid">
+      <section class="card timer-card">
+        <h2>Focus Timer</h2>
+        <div id="timer">25:00</div>
+        <div class="timer-buttons">
+          <button class="primary" id="startBtn">Start</button>
+          <button id="stopBtn">Stop</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <section class="card tasks-card">
+        <h2>Tasks</h2>
+        <form id="taskForm" class="input-row">
+          <input id="taskInput" type="text" placeholder="Add a new task..." autocomplete="off">
+          <button class="primary" type="submit">Add</button>
+        </form>
+        <ul id="taskList"></ul>
+      </section>
+
+      <section class="card links-card">
+        <h2>Quick Links</h2>
+        <form id="linkForm" class="input-row links-input">
+          <input id="linkName" type="text" placeholder="Link name" autocomplete="off">
+          <input id="linkUrl" type="text" placeholder="URL" autocomplete="off">
+          <button class="primary" type="submit">Add Link</button>
+        </form>
+        <div id="linksList" class="quick-links"></div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
